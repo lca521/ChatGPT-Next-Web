@@ -11,6 +11,10 @@ interface Commands {
   settings?: Command;
 }
 
+
+
+
+
 export function useCommand(commands: Commands = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
   useEffect(() => {
