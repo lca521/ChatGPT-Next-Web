@@ -13,7 +13,6 @@ interface Commands {
 
 export function useCommand(commands: Commands = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
-
   useEffect(() => {
     let shouldUpdate = false;
     searchParams.forEach((param, name) => {
